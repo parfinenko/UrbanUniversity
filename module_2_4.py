@@ -5,6 +5,8 @@ not_primes = []
 for num in numbers:
     is_prime = True
     if num <= 1:
+        if num == 1:
+            continue
         is_prime = False
     else:
         for i in range(2,int(num**0.5) +1):
